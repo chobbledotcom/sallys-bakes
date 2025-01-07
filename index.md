@@ -3,14 +3,11 @@ layout: home
 linkText: Home
 order: 0
 metaTitle: "This & That Cafe, Manchester - Home of Rice & Three Curries"
-icon: home
 title: "Sally's Bakes"
-subtitle: "Vegan cakes and pies, freshly cooked in Bury"
+subtitle: "Vegan baker in Bury"
 ---
 
-# Vegan Baker in Bury
-
-My name is Sally and I run a **vegan bakery** based in Bury, delivering homemade pies, pastries, and cakes across much of the North West UK. Everything is **100% vegan** and home-cooked with love.
+Hi! I'm Sally and I run a **vegan bakery** based in Bury, delivering homemade pies, pastries, and cakes across much of the North West UK. Everything is **100% vegan** and home-cooked with love.
 
 ## 🚗 Delivery Areas
 
