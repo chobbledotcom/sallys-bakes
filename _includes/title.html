@@ -1,0 +1,14 @@
+
+<div class="header">
+	<h1 class="header__text">
+		{% if page.icon %}
+			<i class="header__icon icon-{{page.icon}}"></i>
+		{% endif %}
+		{{ page.title | escape }}
+		{% if page.subtitle %}
+			<small class="header__subtitle">
+				{{ page.subtitle }}
+			</small>
+		{% endif %}
+	</h1>
+</div>

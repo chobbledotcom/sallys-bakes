@@ -1,0 +1,35 @@
+title: Sally's Bakes
+description: Vegan cakes, pies, pastries and sweets in Bury, Prestwich, Whitefield, Radcliffe and nearby
+baseurl: ""
+url: "https://vegansally.co.uk"
+
+email_address: sallysbakes@outlook.com
+facebook_page: sallysbakes
+phone_number: 07940 576822
+address: Bury, Greater Manchester, UK
+
+env: production
+
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      permalink: news/:title/
+      layout: post
+  - scope:
+      path: "google0000000000000.html"
+    values:
+      sitemap: false
+
+exclude:
+  - Gemfile
+  - LICENSE
+  - README.md
+  - default.nix
+  - gemset.nix
+  - package-lock.json
+  - shell.nix
