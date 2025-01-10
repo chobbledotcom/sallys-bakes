@@ -12,3 +12,5 @@ vendor/
 result
 result-*
 
+# ---> Direnv
+.direnv
