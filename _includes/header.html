@@ -1,22 +1,20 @@
 <nav class="navbar">
-	<div class="container">
-		<a class="navbar-brand" href="/">
-			<img src="/assets/pie.svg" alt="">
-			Sally's Bakes
-			<span class="hidden-sm hidden-md">
-			  - Vegan Pies &amp; Cake in Bury
-			</span>
-		</a>
-		<div class="navbar__links align--right">
-			{% assign pages_list = (site.pages | sort: 'order') %} 
-			{% for my_page in pages_list %}
-			{% assign my_page = pages_list | where: "path", path | first %} 
-			{% if my_page.linkText %}
-			<a class="navbar__link" href="{{ my_page.url | relative_url }}">{{ my_page.linkText | escape }}
-				<i class="icon-{{ my_page.icon | escape }}"></i>
-			</a>
-			{% endif %} 
-			{% endfor %}
-		</div>
-	</div>
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/assets/pie.svg" style="aspect-ratio: 1" alt="" />
+      <strong>Sally's Bakes</strong>
+      <span class="hidden-sm hidden-md"> - Vegan Pies &amp; Cake in Bury </span>
+    </a>
+    <div class="navbar__links align--right">
+      {%- assign pages_list = (site.pages | sort: 'order') -%}
+      {%- for my_page in pages_list -%}
+      {%- assign my_page = pages_list | where: "path", path | first -%}
+      {%- if my_page.linkText -%}
+      <a class="navbar__link" href="{{ my_page.url | relative_url }}">
+        {{- my_page.linkText | escape -}}
+      </a>
+      {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
 </nav>

@@ -4,7 +4,7 @@ baseurl: ""
 url: "https://vegansally.co.uk"
 
 email_address: sallysbakes@outlook.com
-facebook_page: sallysbakes
+facebook_page: SallysBakes
 phone_number: 07940 576822
 address: Bury, Greater Manchester, UK
 
@@ -16,6 +16,7 @@ plugins:
 
 defaults:
   - scope:
+      path: "posts"
       type: posts
     values:
       permalink: news/:title/
@@ -24,6 +25,9 @@ defaults:
       path: "google0000000000000.html"
     values:
       sitemap: false
+
+sass:
+  sass_dir: _sass
 
 exclude:
   - Gemfile

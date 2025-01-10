@@ -1,0 +1,276 @@
+@charset "utf-8";
+// Define defaults for each variable.
+$highlight: #007e60 !default;
+$text: #3a3a3a !default;
+$header: white !default;
+
+@font-face {
+  font-family: "autour_one";
+  src:
+    url("/assets/fonts/autourone-regular-webfont.woff2") format("woff2"),
+    url("/assets/fonts/autourone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: url("/assets/background.png");
+  background-attachment: fixed;
+  color: $text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav {
+  font-stretch: condensed;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+img#banner {
+  width: 100%;
+}
+
+hr {
+  border-top: 1px solid $text;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+nav,
+footer {
+  background: #190735;
+}
+
+main .container {
+  background: white;
+}
+
+span.hidden-sm {
+  @media (max-width: 575.98px) {
+    display: none;
+  }
+}
+
+a {
+  color: #3455db;
+  text-decoration: underline;
+}
+
+.navbar {
+  a {
+    color: $header;
+    text-decoration: none;
+  }
+  .navbar-brand {
+    font-size: 130%;
+  }
+  &__link {
+    font-size: 1.2rem;
+    margin-right: 1.5rem;
+    &:hover,
+    &.active,
+    &:active {
+      color: yellow;
+      text-decoration: none;
+    }
+  }
+  @media (max-width: 575.98px) {
+    text-align: center;
+
+    .container {
+      display: block;
+    }
+    &__link {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+main {
+  padding: 30px 0 90px;
+  line-height: 1.8;
+  color: $text;
+  .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  @media (max-width: 575.98px) {
+    margin: 10px;
+    padding-top: 10px;
+  }
+}
+
+.header {
+  border-bottom: 1px solid $text;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+
+  &__subtitle {
+    opacity: 0.7;
+    margin-left: 1rem;
+  }
+  @media (max-width: 991.98px) {
+    text-align: center;
+
+    &__subtitle {
+      display: block;
+      font-size: 50%;
+    }
+  }
+  @media (max-width: 575.98px) {
+    &__subtitle {
+      font-size: 60%;
+    }
+  }
+}
+
+.margin {
+  &--top {
+    margin-top: 60px;
+  }
+  &--bottom {
+    margin-bottom: 60px;
+  }
+}
+
+hr {
+  border-top-color: #eee;
+}
+
+.page {
+  &--home,
+  &--praise {
+    strong {
+      color: $highlight;
+    }
+  }
+  h2 {
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    i {
+      width: 3em;
+      opacity: 0.3;
+      text-align: center;
+      font-size: 90%;
+    }
+  }
+  &--menu {
+    text-align: center;
+    em,
+    .green {
+      color: #1cb81c;
+      font-style: normal;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    @media (max-width: 575.98px) {
+      h2 {
+        padding-top: 115px;
+      }
+    }
+  }
+  @media (max-width: 575.98px) {
+    h1,
+    h2,
+    h3 {
+      text-align: center;
+    }
+  }
+}
+
+.embed-reviews {
+  iframe {
+    display: block;
+    border: 0;
+    max-width: 285px;
+    margin: 0 auto;
+  }
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+
+  &__icon {
+    width: 2em;
+    text-align: center;
+    display: inline-block;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__list {
+    position: relative;
+    padding: 0 0 20px 40px;
+    min-height: 2em;
+  }
+}
+
+footer {
+  padding: 4rem 0;
+  font-size: 80%;
+  line-height: 200%;
+  color: white;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  a {
+    color: white;
+  }
+}
+
+.warning-notice {
+  background: #f9eeee;
+  padding: 10px;
+  margin-bottom: 2em;
+  line-height: 1.2;
+  text-align: center;
+  border: 1px solid #a60000;
+  color: #a60000;
+}
+
+$rona: #4b5555;
+
+.coronavirus {
+  background: #eef9ee;
+  padding: 10px;
+  margin-bottom: 2em;
+  line-height: 1.2;
+  text-align: center;
+  border: 1px solid $rona;
+  color: $rona;
+
+  a {
+    color: $rona;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+
+.contact-form {
+  border-radius: 8px;
+  border: none;
+  margin: 2rem auto;
+  display: block;
+  width: 616px;
+  max-width: 100%;
+  height: 496px;
+
+  @media (min-width: 686px) {
+    height: 444px;
+  }
+}
