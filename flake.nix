@@ -1,5 +1,5 @@
 {
-  description = "A best script!";
+  description = "Sally's Bakes";
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
   };

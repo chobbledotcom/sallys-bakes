@@ -1,51 +1,53 @@
-with (import <nixpkgs> {}); let
+with (import <nixpkgs> { });
+let
   env = bundlerEnv {
-    name = "BluePitsHousingAction";
+    name = "Sallys Bakes";
     inherit ruby;
     gemfile = ./Gemfile;
     lockfile = ./Gemfile.lock;
     gemset = ./gemset.nix;
   };
 in
-  stdenv.mkDerivation {
-    name = "bluepitshousingaction-co-uk";
-    buildInputs = [
-      env
-      ruby_3_3
-      rubyPackages_3_3.ffi
-      libffi
-    ];
+stdenv.mkDerivation {
+  name = "sallys-bakes";
+  buildInputs = [
+    env
+    ruby_3_3
+    rubyPackages_3_3.ffi
+    rubyPackages.nokogiri
+    libffi
+  ];
 
-    shellHook = ''
-      serve() {
-        ${env}/bin/jekyll serve --watch &
-        JEKYLL_PID=$!
+  shellHook = ''
+    serve() {
+      ${env}/bin/jekyll serve --watch &
+      JEKYLL_PID=$!
 
-        cleanup_serve() {
-          echo "Cleaning up serve process..."
-          kill $JEKYLL_PID 2>/dev/null
-          wait $JEKYLL_PID 2>/dev/null
-        }
-
-        trap cleanup_serve EXIT INT TERM
-
-        wait $JEKYLL_PID
-
-        cleanup_serve
-
-        trap - EXIT INT TERM
+      cleanup_serve() {
+        echo "Cleaning up serve process..."
+        kill $JEKYLL_PID 2>/dev/null
+        wait $JEKYLL_PID 2>/dev/null
       }
 
-      export -f serve
+      trap cleanup_serve EXIT INT TERM
 
-      cleanup() {
-        echo "Cleaning up..."
-        rm -rf _site .jekyll-cache .jekyll-metadata
-      }
+      wait $JEKYLL_PID
 
-      trap cleanup EXIT
+      cleanup_serve
 
-      echo "Development environment ready!"
-      echo "Run 'serve' to start development server"
-    '';
-  }
+      trap - EXIT INT TERM
+    }
+
+    export -f serve
+
+    cleanup() {
+      echo "Cleaning up..."
+      rm -rf _site .jekyll-cache .jekyll-metadata
+    }
+
+    trap cleanup EXIT
+
+    echo "Development environment ready!"
+    echo "Run 'serve' to start development server"
+  '';
+}

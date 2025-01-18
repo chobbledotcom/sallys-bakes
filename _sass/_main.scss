@@ -5,15 +5,6 @@ $text: #3a3a3a !default;
 $header: white !default;
 
 @font-face {
-  font-family: "autour_one";
-  src:
-    url("/assets/fonts/autourone-regular-webfont.woff2") format("woff2"),
-    url("/assets/fonts/autourone-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "actor";
   src:
     url("/assets/fonts/actor-regular-webfont.woff2") format("woff2"),
@@ -46,6 +37,29 @@ img {
 
 img#banner {
   width: 100%;
+}
+
+.homepage-gallery p {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  a {
+    aspect-ratio: 1;
+    width: 100%;
+    border: 2px solid #dd9ec2;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &:hover {
+      border-color: white;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 hr {
@@ -241,6 +255,9 @@ footer {
   }
   a {
     color: white;
+    &:hover {
+      color: yellow;
+    }
   }
 }
 
