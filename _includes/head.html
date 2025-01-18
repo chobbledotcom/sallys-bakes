@@ -16,4 +16,7 @@
     href="{{ page.url | replace:'index.html','' | absolute_url }}"
   />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  {% if page.noindex -%}
+    <meta name="robots" value="noindex, nofollow">
+  {%- endif %}
 </head>
