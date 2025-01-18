@@ -1,6 +1,5 @@
 ---
 layout: page
-cssClass: page--praise
 metaTitle: "Kind Words From Our Customers - Reviews of Sally's Bakes Vegan Bakery"
 permalink: /reviews/
 title: "Reviews of Sally's Bakes"

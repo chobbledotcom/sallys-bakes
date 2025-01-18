@@ -1,6 +1,5 @@
 ---
 layout: contact
-cssClass: page--menu
 linkText: Contact
 order: 2
 metaTitle: "Contact Sally's Bakes Vegan Bakery"

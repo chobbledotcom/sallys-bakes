@@ -1,7 +1,7 @@
 title: Sally's Bakes
 description: Vegan cakes, pies, pastries and sweets in Bury, Prestwich, Whitefield, Radcliffe and nearby
 baseurl: ""
-url: "https://vegansally.co.uk"
+url: "https://sallysbakesbury.co.uk"
 
 email_address: sallysbakes@outlook.com
 facebook_page: SallysBakes
@@ -14,13 +14,20 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
 
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path
+  pages:
+    output: true
+    permalink: /:path
+
 defaults:
   - scope:
-      path: "posts"
-      type: posts
+      path: ""
+      type: "posts"
     values:
-      permalink: news/:title/
-      layout: post
+      layout: "post"
   - scope:
       path: "google0000000000000.html"
     values:

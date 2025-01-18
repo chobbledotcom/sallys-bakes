@@ -1,6 +1,5 @@
 ---
 layout: page
-cssClass: page--menu
 linkText: Menu
 order: 1
 permalink: /menu/
@@ -10,6 +9,8 @@ subtitle: "Vegan pies, cakes, & sweet treats"
 ---
 
 Wholesale prices are available on request - [get in touch](/contact) to place an order!
+
+<div class="menu" markdown="1">
 
 ## 🥧 Large Pies (serves 6) - **£12**
 
@@ -68,3 +69,5 @@ Wholesale prices are available on request - [get in touch](/contact) to place an
 - Free delivery on orders over **£35**
 - Payment by bank transfer
 - Orders close at **6pm** on **Thursday**
+
+</div>

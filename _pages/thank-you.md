@@ -1,6 +1,5 @@
 ---
 layout: page
-cssClass: page--menu
 metaTitle: "Contact Sally's Bakes Vegan Bakery"
 permalink: /thank-you/
 title: "Contact Sally's Bakes"

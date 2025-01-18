@@ -33,6 +33,7 @@ nav {
 img {
   max-width: 100%;
   display: block;
+  margin: 1rem auto;
 }
 
 img#banner {
@@ -218,13 +219,8 @@ hr {
       font-size: 90%;
     }
   }
-  &--menu {
+  .menu {
     text-align: center;
-    em,
-    .green {
-      color: #1cb81c;
-      font-style: normal;
-    }
     ul {
       list-style-type: none;
       padding: 0;

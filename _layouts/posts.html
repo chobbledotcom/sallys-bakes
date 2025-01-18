@@ -4,9 +4,11 @@ layout: default
 
 {% include title.html %}
 
+{{ content }}
+
 <div class="row">
 	<div class="col-md-8 order-md-1 margin--bottom">
-		<div class="page {{page.cssClass}}">
+		<div class="page">
 			<ul class="post-list">
 				{% for post in site.posts %}
 				<li>
