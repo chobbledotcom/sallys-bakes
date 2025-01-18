@@ -1,6 +1,5 @@
 ---
 title: Socca-chickpea flatbread
-date: 2025-01-18
 ---
 
 I saw socca on a menu and my search began. What is it ? What’s in it? And how do I make it?
