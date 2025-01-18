@@ -14,9 +14,7 @@ $header: white !default;
 
 
 body {
-  background-color: #091b17;
-  background: url("/assets/background.png");
-  background-attachment: fixed;
+  background-color: #008070;
   color: $text;
 }
 
@@ -94,10 +92,14 @@ footer {
   background: #008070
 }
 
-main .container {
-  background: #ffbfe4;
-  border: 2px solid #f497cc;
-  border-radius: 5px;
+main {
+  background: url("/assets/background.png");
+  background-attachment: fixed;
+  .container {
+    background: #ffbfe4;
+    border: 2px solid #f497cc;
+    border-radius: 5px;
+  }
 }
 
 span.hidden-sm {
