@@ -48,8 +48,8 @@ Hi! I'm Sally and I run a **vegan bakery** based in Bury, delivering homemade pi
 
 ## 📝 How to Order
 
-- Check out [**the menu**](/menu/)
-- Order via [**Facebook**](https://www.facebook.com/{{site.facebook_url}}), [Instagram](https://www.instagram.com/sallysbakes), or [**Our contact page**](/contact/)
+- Check out [the menu](/menu/)
+- Order via [Facebook](https://www.facebook.com/{{site.facebook_url}}), [Instagram](https://www.instagram.com/sallysbakes), or [our contact page](/contact/)
 - Minimum order: **£18**
 - Delivery: **£5** (Free on orders over **£35**)
 - Payment by bank transfer

@@ -171,6 +171,17 @@ hr {
   border-top-color: #eee;
 }
 
+.page, .social-links {
+  a {
+    color: #007e60;
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
 .page {
   &--home,
   &--praise {
@@ -227,16 +238,6 @@ hr {
 .social-links {
   list-style-type: none;
   padding: 0;
-
-  &__icon {
-    width: 2em;
-    text-align: center;
-    display: inline-block;
-    opacity: 0.7;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
 
   &__list {
     position: relative;
