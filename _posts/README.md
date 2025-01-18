@@ -1,3 +1,5 @@
+# Writing blog posts
+
 Blog posts should have filenames that look like this:
 
 ```yyyy-mm-dd-title-with-spaces-replaced-with-dashes.md```
