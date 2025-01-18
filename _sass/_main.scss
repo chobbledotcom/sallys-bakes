@@ -13,7 +13,17 @@ $header: white !default;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "actor";
+  src:
+    url("/assets/fonts/actor-regular-webfont.woff2") format("woff2"),
+    url("/assets/fonts/actor-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  background-color: #091b17;
   background: url("/assets/background.png");
   background-attachment: fixed;
   color: $text;
@@ -46,11 +56,13 @@ hr {
 
 nav,
 footer {
-  background: #190735;
+  background: #008a7c;
 }
 
 main .container {
-  background: white;
+  background: #ffd5ed;
+  border: 2px solid #f497cc;
+  border-radius: 5px;
 }
 
 span.hidden-sm {
@@ -221,7 +233,6 @@ hr {
 
 footer {
   padding: 4rem 0;
-  font-size: 80%;
   line-height: 200%;
   color: white;
   ul {
@@ -241,24 +252,6 @@ footer {
   text-align: center;
   border: 1px solid #a60000;
   color: #a60000;
-}
-
-$rona: #4b5555;
-
-.coronavirus {
-  background: #eef9ee;
-  padding: 10px;
-  margin-bottom: 2em;
-  line-height: 1.2;
-  text-align: center;
-  border: 1px solid $rona;
-  color: $rona;
-
-  a {
-    color: $rona;
-    text-decoration: underline;
-    font-weight: bold;
-  }
 }
 
 .contact-form {

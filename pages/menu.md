@@ -9,6 +9,8 @@ title: "Menu"
 subtitle: "Vegan pies, cakes, & sweet treats"
 ---
 
+Wholesale prices are available on request - [get in touch](/contact) to place an order!
+
 ## 🥧 Large Pies (serves 6) - **£12**
 
 - Cheeze & Onion
