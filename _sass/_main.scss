@@ -207,11 +207,8 @@ hr {
 }
 
 .page {
-  &--home,
-  &--praise {
-    strong {
-      color: $highlight;
-    }
+  strong {
+    color: $highlight;
   }
   h2 {
     padding-top: 60px;
