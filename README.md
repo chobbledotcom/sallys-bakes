@@ -1,6 +1,8 @@
-# sallys-bakes
+# Sally's Bakes
 
 Sally's Bakes - a Jekyll site, hosted on Neocities
+
+Check it out online at **[sallysbakesbury.co.uk](https://sallysbakesbury.co.uk)**
 
 Links for editing:
 
