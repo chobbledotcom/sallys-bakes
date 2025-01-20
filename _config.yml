@@ -21,6 +21,9 @@ collections:
   pages:
     output: true
     permalink: /:path
+  ingredients:
+    output: true
+    permalink: /menu/:path
 
 defaults:
   - scope:
@@ -28,6 +31,11 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "ingredients"
+    values:
+      layout: "ingredient"
   - scope:
       path: "google0000000000000.html"
     values:

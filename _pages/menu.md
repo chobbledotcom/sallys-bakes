@@ -62,6 +62,10 @@ Wholesale prices are available on request - [get in touch](/contact) to place an
 
 - Cream Egg - **£1.25**
 
+## 🥣 Ingredients
+
+[View the ingredients for each item here](/menu/ingredients)
+
 ## 📝 Ordering Information
 
 - Minimum order: **£18**

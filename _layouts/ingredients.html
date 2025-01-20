@@ -1,0 +1,25 @@
+---
+layout: page
+---
+
+<p>
+  😋
+  <a href="/menu/">Back to the menu</a>
+</p>
+
+
+{{ content }}
+
+<hr>
+
+<ul>
+  {%- for ingredient in site.ingredients -%}
+    {%- if ingredient.url != page.url -%}
+      <li>
+        <a href="{{ ingredient.url }}">
+          {{ ingredient.title }}
+        </a>
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+</ul>
