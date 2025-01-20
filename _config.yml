@@ -47,8 +47,8 @@ sass:
 exclude:
   - Gemfile
   - LICENSE
-  - README.md
   - default.nix
   - gemset.nix
   - package-lock.json
   - shell.nix
+  - "*.md"
