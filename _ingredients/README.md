@@ -8,7 +8,7 @@ Each ingredient list should start with three dashes, the title of the item, and 
 
 To include the pastry ingredients on a page, you can type: `{%- include_relative pastry.md %}` - this saves having to write them out each time.
 
-To edit the pastry ingredients, [click here](pastry.md).
+To edit the pastry ingredients, [click here](a-lovely-pasty.md).
 
 Highlight allergens by surrounding them with two asterisks, like `**this**`
 
