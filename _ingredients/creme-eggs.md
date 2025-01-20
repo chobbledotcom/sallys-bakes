@@ -1,0 +1,24 @@
+---
+title: Creme Eggs
+---
+
+- Shea butter oil
+- Water
+- Coconut oil
+- Rapeseed oil
+- Salt
+- **Almonds**
+- Carrot juice
+- Emulsifier **(Soya lecithin)**
+- Lemon juice
+- Natural flavour
+- Sunflower oil
+- Golden syrup
+- Emulsifier (polysorbate 80)
+- Icing sugar
+- Vanilla flavouring
+- Sugar
+- Cocoa mass
+- Cocoa butter
+- Propylene gylcol
+- Colour (curcumin)
