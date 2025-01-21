@@ -51,4 +51,4 @@ exclude:
   - gemset.nix
   - package-lock.json
   - shell.nix
-  - "*.md"
+  - README.md
