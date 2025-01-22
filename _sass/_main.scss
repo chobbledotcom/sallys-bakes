@@ -309,6 +309,9 @@ footer {
   label {
     color: #2E7531;
     font-family: "ABeeZee";
+    &.url {
+      display: none;
+    }
   }
 
   input,
