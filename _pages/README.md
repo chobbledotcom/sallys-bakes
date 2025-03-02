@@ -30,3 +30,4 @@ subtitle: The subtitle of the page (can be empty)
 
 The content of the page, with images, formatting, etc
 ```
+

@@ -23,7 +23,10 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   {% if page.noindex -%}
     <meta name="robots" value="noindex, nofollow">
-  {%- endif %}
+  {%- endif -%}
   <script data-goatcounter="https://analytics.sallysbakesbury.co.uk/count"
         async src="https://analytics.sallysbakesbury.co.uk/count.js"></script>
+  {% if page.contact -%}
+    <script src="https://unpkg.com/@botpoison/browser" async></script>
+  {%- endif %}
 </head>

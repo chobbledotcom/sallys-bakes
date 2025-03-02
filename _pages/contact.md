@@ -6,6 +6,7 @@ metaTitle: "Contact Sally's Bakes Vegan Bakery"
 permalink: /contact/
 title: "Contact Sally's Bakes"
 subtitle: "Arrange a delivery"
+contact: true
 ---
 
 To get in touch with Sally's Bakes and to place an order, you can:
