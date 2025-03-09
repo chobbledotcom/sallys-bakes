@@ -8,9 +8,12 @@ pkgs.stdenv.mkDerivation {
   src = builtins.filterSource (
     path: type:
     !(builtins.elem (baseNameOf path) [
-      "_site"
-      ".jekyll-cache"
       ".git"
+      ".jekyll-cache"
+      "_site"
+      "bin"
+      "flake.lock"
+      "flake.nix"
     ])
   ) ./.;
 
