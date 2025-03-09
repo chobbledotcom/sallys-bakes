@@ -23,20 +23,14 @@ pkgs.stdenv.mkDerivation {
 
   configurePhase = ''
     export HOME=$TMPDIR
-
-    # Create necessary directories in the temporary writable location
     mkdir -p $TMPDIR/_site
   '';
 
   buildPhase = ''
-    echo 'Building site'
-
-    # Run Jekyll build with destination in the temporary directory
     jekyll build --source $PWD --destination $TMPDIR/_site
   '';
 
   installPhase = ''
-    # Copy the built site to the output directory
     mkdir -p $out
     cp -r $TMPDIR/_site/* $out/
   '';
