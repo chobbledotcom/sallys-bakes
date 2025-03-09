@@ -3,26 +3,24 @@ layout: default
 ---
 
 <div class="header">
-	<h1 class="header__text">
-	  <small>Ingredients:</small>
-		{{ page.title | escape }}
-	</h1>
+  <h1 class="header__text">
+    <small>Ingredients:</small>
+    {{ page.title | escape }}
+  </h1>
 </div>
 
 <div class="row">
-	<div class="col-md-8 order-sm-1 margin--bottom">
-		<div class="page">
-		  <p>
-			  🥣
-	      <a href="/menu/ingredients/">Back to the ingredients list</a>
-			</p>
-		  <p>
-				Common allergens are highlighted in <strong>bold</strong>
-			</p>
-			{{ content }}
-		</div>
-	</div>
-	<div class="col-md-4 order-sm-2 margin--bottom">
-		{% include social-media-links.html %}
-	</div>
+  <div class="col-md-8 order-sm-1 margin--bottom">
+    <div class="page">
+      <p>
+        🥣
+        <a href="/menu/ingredients/">Back to the ingredients list</a>
+      </p>
+      <p>Common allergens are highlighted in <strong>bold</strong></p>
+      {{ content }}
+    </div>
+  </div>
+  <div class="col-md-4 order-sm-2 margin--bottom">
+    {% include social-media-links.html %}
+  </div>
 </div>

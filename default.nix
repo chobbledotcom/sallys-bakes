@@ -1,36 +1,9 @@
-{
-  pkgs ? import <nixpkgs> { },
-}:
-
-let
-  # Input source files
-  src = ./.;
-  nodeDeps = import ./node-deps.nix { inherit pkgs; };
-  inherit (nodeDeps) packageJSON nodeModules;
-in
-pkgs.stdenv.mkDerivation {
-  name = "veganprestwich-co-uk";
-
-  src = builtins.filterSource (
-    path: type:
-    !(builtins.elem (baseNameOf path) [
-      "_site"
-      "node_modules"
-      ".git"
-    ])
-  ) src;
-
-  nativeBuildInputs = with pkgs; [
-    jekyll
-  ];
-
-  buildPhase = ''
-    ${pkgs.bash}/bin/bash ${./bin/build}
-  '';
-
-  installPhase = ''
-    mkdir -p $out
-    cp -r _site/* $out/
-    rm -rf node_modules _site package.json
-  '';
-}
+(import
+  (fetchTarball {
+    url = "https://github.com/edolstra/flake-compat/archive/v1.1.0.tar.gz";
+    sha256 = "0x2jn3vrawwv9xp15674wjz9pixwjyj3j771izayl962zziivbx2";
+  })
+  {
+    src = ./.;
+  }
+).defaultNix.packages.${builtins.currentSystem}.build
