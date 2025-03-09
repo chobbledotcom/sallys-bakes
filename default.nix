@@ -3,8 +3,8 @@ let
   flake =
     (import
       (fetchTarball {
-        url = "https://github.com/edolstra/flake-compat/archive/99f1c2157fba4bfe6211a321fd0ee43199025dbf.tar.gz";
-        sha256 = "0x2jn3vrawwv9xp15674wjz9pixwjyj3j771izayl962zziivbx2";
+        url = "https://github.com/edolstra/flake-compat/archive/v1.1.0.tar.gz";
+        sha256 = "19d2z6xsvpxm184m41qrpi1bplilwipgnzv9jy17fgw421785q1m";
       })
       {
         src = ./.;
@@ -23,11 +23,15 @@ pkgs.stdenv.mkDerivation {
   ];
 
   buildPhase = ''
-    # Ensure we're in the source directory
-    cd $src
+    # Create a temporary home directory where Jekyll can write cache files
+    export HOME=$(mktemp -d)
 
-    # Run the Jekyll build
-    ${buildScript}/bin/build
+    # Create a temporary directory for Jekyll cache
+    mkdir -p $HOME/.jekyll-cache
+
+    # Run the Jekyll build with explicit cache directory setting
+    cd $src
+    jekyll build --source $src --destination $PWD/_site --disable-disk-cache
   '';
 
   installPhase = ''
