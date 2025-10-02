@@ -1,68 +1,76 @@
 {
-  description = "Sally's Bakes";
-  inputs = {
-    flake-utils.url = "github:numtide/flake-utils";
-  };
-  outputs =
+  description = "Sally's Bakes website";
+
+  inputs.nixpkgs.url = "nixpkgs";
+
+  outputs = { self, nixpkgs }:
+    let
+      systems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
+      forAllSystems = nixpkgs.lib.genAttrs systems;
+      siteName = "sallys-bakes";
+
+      makeRubyEnv = pkgs: pkgs.bundlerEnv {
+        name = siteName;
+        ruby = pkgs.ruby_3_3;
+        gemfile = ./Gemfile;
+        lockfile = ./Gemfile.lock;
+        gemset = ./gemset.nix;
+      };
+    in
     {
-      self,
-      nixpkgs,
-      flake-utils,
-    }:
-    flake-utils.lib.eachDefaultSystem (
-      system:
-      let
-        pkgs = import nixpkgs {
-          inherit system;
-        };
+      packages = forAllSystems (system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+          rubyEnv = makeRubyEnv pkgs;
+        in
+        {
+          default = pkgs.stdenv.mkDerivation {
+            name = siteName;
+            src = pkgs.lib.cleanSource ./.;
 
-        # Common build inputs
-        commonBuildInputs = with pkgs; [
-          jekyll
-        ];
+            nativeBuildInputs = with pkgs; [ ruby_3_3 minify ];
 
-        # Helper function to create scripts
-        mkScript =
-          name:
-          (pkgs.writeScriptBin name (builtins.readFile ./bin/${name})).overrideAttrs (old: {
-            buildCommand = "${old.buildCommand}\n patchShebangs $out";
-          });
+            configurePhase = ''
+              export HOME=$TMPDIR
+              mkdir -p _site
+            '';
 
-        # Helper function to create packages
-        mkPackage =
-          name:
-          pkgs.symlinkJoin {
-            inherit name;
-            paths = [ (mkScript name) ] ++ commonBuildInputs;
-            buildInputs = [ pkgs.makeWrapper ];
-            postBuild = "wrapProgram $out/bin/${name} --prefix PATH : $out/bin";
+            buildPhase = ''
+              echo "Building site with Jekyll..."
+              JEKYLL_ENV=production ${rubyEnv}/bin/jekyll build --source . --destination _site --trace
+
+              echo 'Minifying HTML'
+              minify --all --recursive --output . _site
+            '';
+
+            installPhase = ''
+              mkdir -p $out
+              cp -r _site/* $out/
+            '';
           };
+        });
 
-        # Script names
-        scripts = [
-          "build"
-          "serve"
-        ];
+      devShells = forAllSystems (system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+          rubyEnv = makeRubyEnv pkgs;
+        in
+        {
+          default = pkgs.mkShell {
+            buildInputs = with pkgs; [ rubyEnv ruby_3_3 rubyPackages_3_3.ffi libffi ];
 
-        # Generate all packages
-        scriptPackages = builtins.listToAttrs (
-          map (name: {
-            inherit name;
-            value = mkPackage name;
-          }) scripts
-        );
-
-      in
-      rec {
-        defaultPackage = packages.serve;
-        packages = scriptPackages;
-
-        devShells = rec {
-          default = dev;
-          dev = pkgs.mkShell {
-            buildInputs = commonBuildInputs ++ (builtins.attrValues packages);
+            shellHook = ''
+              serve() {
+                ${rubyEnv}/bin/jekyll serve --watch &
+                JEKYLL_PID=$!
+                trap "kill $JEKYLL_PID 2>/dev/null; wait $JEKYLL_PID 2>/dev/null" EXIT INT TERM
+                wait $JEKYLL_PID
+                trap - EXIT INT TERM
+              }
+              export -f serve
+              echo "Development environment ready! Run 'serve' to start development server"
+            '';
           };
-        };
-      }
-    );
+        });
+    };
 }
