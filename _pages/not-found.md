@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /not_found.html
+permalink: /bunnycdn_errors/404.html
 title: "Page Not Found"
 subtitle: "404 Error"
 noindex: true
