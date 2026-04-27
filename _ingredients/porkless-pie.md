@@ -1,6 +1,10 @@
 ---
 title: Porkless Pie
 ---
+{%- include_relative [pastry.md](http://pastry.md) %}
+
+**Filling:**
+
 Onion
 
 Red kidney beans 
