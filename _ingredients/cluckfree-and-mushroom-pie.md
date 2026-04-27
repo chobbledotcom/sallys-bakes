@@ -1,9 +1,7 @@
 ---
 title: Cluckfree and Mushroom Pie
 ---
-
-
-&nbsp;
+{%- include_relative [pastry.md](http://pastry.md) %}
 
 **Filling:**
 
