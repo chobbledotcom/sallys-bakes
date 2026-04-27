@@ -1,11 +1,11 @@
 ---
+title: Thank you
+subtitle: Thank you!
+metaTitle: Contact Sally's Bakes Vegan Bakery
 layout: page
-metaTitle: "Contact Sally's Bakes Vegan Bakery"
 permalink: /thank-you/
-title: "Contact Sally's Bakes"
-subtitle: "Thank you!"
+contact: false
 noindex: true
 sitemap: false
 ---
-
 Thank you! Your message has been sent.
