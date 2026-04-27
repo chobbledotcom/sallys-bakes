@@ -16,13 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Checkout chobble-template
-        uses: actions/checkout@v4
-        with:
-          repository: chobbledotcom/chobble-template
-          ref: 40a240538b959c18f68d1a56ee824e5322288a3f
-          path: chobble-template
-
       - name: Install Nix
         uses: cachix/install-nix-action@v30
         with:
