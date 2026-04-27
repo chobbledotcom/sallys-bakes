@@ -1,3 +1,6 @@
+---
+title: Pastry
+---
 ## Pastry
 
 - Flour
@@ -14,3 +17,4 @@
 - Colour
   - Carotenes
 - **Soya** milk
+
