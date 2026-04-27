@@ -1,7 +1,7 @@
 ---
 title: Porkless Pie
 ---
-{%- include_relative [pastry.md](http://pastry.md) %}
+{%- include_relative pastry.md %}
 
 **Filling:**
 
