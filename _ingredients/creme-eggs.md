@@ -1,7 +1,6 @@
 ---
-title: Creme Eggs
+title: Cream Eggs
 ---
-
 - Shea butter oil
 - Water
 - Coconut oil
@@ -22,3 +21,4 @@ title: Creme Eggs
 - Cocoa butter
 - Propylene gylcol
 - Colour (curcumin)
+
