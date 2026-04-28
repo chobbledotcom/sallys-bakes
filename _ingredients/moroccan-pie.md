@@ -11,11 +11,20 @@ garlic
 
 butternut squash
 
-cumin
+spices (cumin, turmeric, coriander, cayenne pepper)
 
-turmeric
+Veg stock (salt, starch, palm fat, sugar, yeast extract, onion, carrot, **celery**, leek, bell pepper, white cabbage, parsley, garlic, turmeric, tarragon)
 
-coriander
+chickpeas
 
-cayenne pepper
+dried apricots (preservative: **sulphur dioxide**, potassium sorbate)
 
+dried cranberries (sugar, sunflower oil)
+
+sultanas (sunflower oil)
+
+black pepper
+
+lemon juice
+
+**sesame seeds**
