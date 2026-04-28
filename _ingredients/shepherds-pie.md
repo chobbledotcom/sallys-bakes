@@ -17,6 +17,8 @@ Veg stock (salt, starch, palm fat, sugar, yeast extract, onion, carrot, **celery
 
 Vegan beef flavour oxo cube (**wheat** flour (calcium, iron, niacin, thiamine), salt, maize starch, yeast extract, monosodium glutamate, disodium guanylate, caramel, palm oil, sugar, lactic acid, potassium chloride)
 
+Henderson's (water, spirit vinegar, sugar, caramel, sugar syrup, salt, tamarinds, acetic acid, cayenne pepper, cloves, saccharin, garlic oil)
+
 potato
 
 vegan spread (sunflower lecithin, potassium sorbate, curcumin)
