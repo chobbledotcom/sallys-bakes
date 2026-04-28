@@ -9,12 +9,14 @@ Red kidney beans
 
 Sage
 
-Veg stock (salt, palm oil, corn starch, yeast extract, onion powder, carrot, tomato, **celery**, sugar, parsley, garlic, turmeric, antioxidant: extract of rosemary, spirit vinegar, caramel, tamarind, acetic acid, cayenne pepper, cloves, saccharin, garlic oil, sage oil)
+Veg stock (salt, starch, palm fat, sugar, yeast extract, onion, carrot, **celery**, leek, bell pepper, white cabbage, parsley, garlic, turmeric, tarragon)
 
 Wheat gluten 
 
 Soya mince 
 
-Vegan cheese (coconut oil, modified potato starch, maize starch, gluten free oat fibre, carrageenan, guar gum, calcium citrate, lactic acid, sodium lactate, carotenes)
+Vegan cheese (coconut oil, modified potato starch, gluten free oat fibre, maize starch, calcium citrate, salt, carrageenan, guar gum,  lactic acid, sodium lactate, yeast extract, carotenes)
+
+BBQ Sauce (tomato paste, sugar spirit vinegar, molasses, maize starch, smoke flavour, spices)
 
 Gherkin
