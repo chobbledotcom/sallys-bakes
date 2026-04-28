@@ -11,7 +11,7 @@ Red kidney beans
 
 Sage
 
-Veg stock (salt, palm oil, corn starch, yeast extract, onion powder, carrot, tomato, **celery**, sugar, parsley, garlic, turmeric, antioxidant: extract of rosemary, spirit vinegar, caramel, tamarind, acetic acid, cayenne pepper, cloves, saccharin, garlic oil, sage oil)
+Veg stock (salt, starch, palm fat, sugar, yeast extract, onion, carrot, **celery**, leek, bell pepper, white cabbage, parsley, garlic, turmeric, tarragon)
 
 **wheat gluten** 
 
