@@ -19,7 +19,7 @@ Flavour enhancer:E621, pimento, citric acid, thyme, dried inactive yeast
 
 **Sesame** 
 
-Cumin**** 
+Cumin
 
 **Soya milk** 
 
