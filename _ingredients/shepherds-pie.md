@@ -1,6 +1,8 @@
 ---
 title: Shepherd's Pie
 ---
+{%- include_relative [pastry.md](http://pastry.md) %}
+
 **Filling:**
 
 Onion
