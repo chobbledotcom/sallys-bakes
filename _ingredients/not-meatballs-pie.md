@@ -3,7 +3,7 @@ title: Not Meatballs Pie
 ---
 Butter beans 
 
-Soya
+**Soya**
 
 Thyme 
 
@@ -15,5 +15,9 @@ Veg stock (salt, starch, palm fat, sugar, yeast extract, onion, carrot, **celery
 
 Black pepper 
 
-Wheat Gluten 
+**Wheat Gluten** 
+
+Vegan beef flavour oxo cube (**wheat** flour (calcium, iron, niacin, thiamine), salt, maize starch, yeast extract, monosodium glutamate, disodium guanylate, caramel, palm oil, sugar, lactic acid, potassium chloride)
+
+Oregano 
 
