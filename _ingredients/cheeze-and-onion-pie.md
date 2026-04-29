@@ -1,7 +1,7 @@
 ---
 title: Cheeze and Onion Pie
 ---
-{%- include_relative [pastry.md](http://pastry.md) %}
+{%- include_relative pastry.md %}
 
 Vegan cheese (coconut oil, modified potato starch, gluten free oat fibre, maize starch, calcium citrate, salt, carrageenan, guar gum,  lactic acid, sodium lactate, yeast extract, carotenes)
 
